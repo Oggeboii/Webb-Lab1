@@ -1,0 +1,146 @@
+.logo{
+    width: 100%;
+}
+
+body{
+    background-color: #453652;
+    color: #E2DAE9;
+}
+
+section{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 300px;
+    grid-template-areas: 
+    "header"
+    "navigation"
+    "main-content";
+    grid-gap: 20px;
+}
+
+header{
+    grid-area: header;
+    background-color: #453652;
+    padding: 50px;
+}
+
+nav{
+    grid-area: navigation;
+    background-color: #2136D1;
+}
+
+nav.nav-list{
+    padding: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+li{
+    margin-bottom: 7px;
+}
+
+a{
+    font-size: 18px;
+    color: #D1BF21;
+    text-decoration: none;
+}
+
+main{
+    grid-area: main-content;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
+
+main article{
+    background-color: #7F21D1;
+    padding: 20px;
+}
+
+.article-img{
+    max-width: 45%;
+    height: auto;
+}
+
+.album-cover{
+    max-width: 50%;
+    max-height: 50%;
+    min-width: 350px;
+	display: block;
+	margin: 0 auto;        
+    }
+
+    
+.card {     
+    max-height: auto;
+    width: 100%;     
+    margin: 0 auto;         
+    background-color: #2136D1; 
+    text-align: center;       
+    padding: 3px 0px;             
+    box-sizing: border-box;
+}
+.star {
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    cursor: pointer;
+    color: gray;
+}
+.star.one, .star.two, .star.three, .star.four, .star.five {
+  color: gold;
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+    
+    nav.nav-list{ /* Centerar navigeringsmenyn */
+        text-align: center;
+    }
+    nav.nav-list ul li{
+        display: inline; /* Visar menyn som inline */
+        padding: 10px;
+    }
+
+    section.grid{
+        width: 512px;
+        margin: 20px auto;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: 1fr 1fr;
+    }
+    section article{
+        width: auto;
+    }
+    
+    article{
+        width: 812px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h2, ul{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .article-img{
+    max-width: 80%;
+    height: auto;
+    }
+
+    .album-cover{
+    max-width: 400%;
+    max-height: 400%;
+    min-width: 400px;
+	display: block;
+	margin: 0 auto;        
+    }
+}
