@@ -1,3 +1,7 @@
+ window.recordName = document.querySelector("main").dataset.record;
+const ul = document.querySelector("#playlist");
+const url = '/data/playlist.json';
+
 function createNode(element) {
     return document.createElement(element);
 }
@@ -6,9 +10,6 @@ function append(parent, el) {
     return parent.appendChild(el);
 }
 
-const recordName = document.querySelector("main").dataset.record;
-const ul = document.querySelector("#playlist");
-const url = '/data/playlist.json';
 fetch(url)
     .then((resp) => resp.json())
     .then(function(data) {

@@ -16,7 +16,6 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="records.html">Records</a></li>
-                <li><a href="members.html">Members</a></li>
             </ul>
         </nav>
     <main>
@@ -32,11 +31,12 @@
         <article>
             <img src="images/records/Foregone.png" alt="Foregone record" class="article-img">
             <h3><a href="/records/Foregone.html">Foregone</a></h3>
-            <p>text about Foregone</p>
+            <p>Released 2023</p>
         </article>
         <article>
-            <h3>Anders Fridén</h3>
-            <p>text about Anders Fridén</p>
+            <h3>Favourite records:</h3>
+            <ul id="favouriteList"></ul>
+
         </article>
     </section>
     </main>
@@ -58,6 +58,7 @@
         </form>
         <button onclick="showForm(this)">Sign up</button>
     </footer>
+    <script src="/js/favourites.js"></script>
     <script src="/js/form.js"></script>
 </body>
 </html>

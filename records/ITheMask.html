@@ -16,7 +16,6 @@
             <ul>
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="/records.html">Records</a></li>
-                <li><a href="/members.html">Members</a></li>
             </ul>
         </nav>
     <main data-record="I, the Mask">
@@ -28,6 +27,7 @@
             <span onclick="gfg(5)" class="star">★</span>
             <h3 id="output">Rating is: 0/5</h3>
         </div>
+        <button id="favButton" onclick="toggleFavourite(recordName)">Add/Remove Favourite</button>
 
         <article>
             <h1>I, the Mask</h1>
@@ -44,6 +44,7 @@
        
     </ul>
     </main>
+        <script src="/js/favourite.js"></script>
         <script src="/js/fetch.js"></script>
         <script src="/js/stars.js"></script>
 

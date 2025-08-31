@@ -3,8 +3,6 @@ elForm.style.display ="none";
 const elOutput = document.querySelector('#output');
 const elEmail = document.querySelector('#txtEmail')
 const elPassword = document.querySelector('#txtPassword')
-const elUserList = document.querySelector('#userList')
-
 
 function showForm(button) {
 

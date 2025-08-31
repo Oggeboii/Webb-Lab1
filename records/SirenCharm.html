@@ -10,13 +10,12 @@
 </head>
 <body>
     <header>
-        <img src="/images/records/sirenChamr.png" alt="Siren charms record" class="album-cover">
+        <img src="/images/records/SirenCharms.png" alt="Siren charms record" class="album-cover">
     </header>
         <nav class="nav-list">
             <ul>
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="/records.html">Records</a></li>
-                <li><a href="/members.html">Members</a></li>
             </ul>
         </nav>
     <main data-record="Siren Charms">
@@ -28,6 +27,7 @@
             <span onclick="gfg(5)" class="star">★</span>
             <h3 id="output">Rating is: 0/5</h3>
         </div>
+        <button id="favButton" onclick="toggleFavourite(recordName)">Add/Remove Favourite</button>
 
         <article>
             <h1>Siren Charms</h1>
@@ -45,6 +45,7 @@
         
     </ul>
     </main>
+        <script src="/js/favourite.js"></script>
         <script src="/js/fetch.js"></script>
         <script src="/js/stars.js"></script>
 </body>

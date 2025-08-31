@@ -16,7 +16,6 @@
             <ul>
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="/records.html">Records</a></li>
-                <li><a href="/members.html">Members</a></li>
             </ul>
         </nav>
     <main data-record="Foregone">
@@ -28,6 +27,7 @@
             <span onclick="gfg(5)" class="star">★</span>
             <h3 id="output">Rating is: 0/5</h3>
         </div>
+        <button id="favButton" onclick="toggleFavourite(recordName)">Add/Remove Favourite</button>
 
         <article>
             <h1>Foregone</h1>
@@ -39,22 +39,10 @@
         </article>
     <h2>Playlist</h2>
     <ul id="playlist">
-        <!-- 
-        <li>1. The Beginning of All Things That Will End</li>
-        <li>2. State of Slow Decay</li>
-        <li>3. Meet Your Maker</li>
-        <li>4. Bleeding Out</li>
-        <li>5. Foregone, Pt. 1</li>
-        <li>6. Foregone, Pt. 2</li>
-        <li>7. Pure Light of Mind</li>
-        <li>8. The Great Deceiver</li>
-        <li>9. In the Dark</li>
-        <li>10. A Dialogue in B Flat Minor</li>
-        <li>11. Cynosure</li>
-        <li>12. End the Transmission</li>
-    -->
+     
     </ul>
     </main>
+        <script src="/js/favourite.js"></script>
         <script src="/js/fetch.js"></script>
         <script src="/js/stars.js"></script>
 

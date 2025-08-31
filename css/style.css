@@ -9,16 +9,13 @@ h1,h2,h3{
 body{
     background-color: #453652;
     color: #E2DAE9;
+    
 }
 
 section{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 300px 300px;
-    grid-template-areas: 
-    "header"
-    "navigation"
-    "main-content";
     grid-gap: 20px;
 }
 
@@ -84,8 +81,7 @@ main article{
     }
 
 h2, ul{
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
 footer{
@@ -96,13 +92,19 @@ footer{
     text-align: center;
 }
 
+main button{
+    background-color: #2136D1;
+    color: #D1BF21;
+    font-size: 18px;
+
+}
+
 .form-group{
     padding-bottom: 10px;
 
 }
     
 .card {     
-    max-height: auto;
     width: 100%;     
     margin: 0 auto;         
     background-color: #2136D1; 
@@ -112,8 +114,6 @@ footer{
 }
 .star {
     padding: 10px;
-    margin-left: auto;
-    margin-right: auto;
     font-size: 25px;
     cursor: pointer;
     color: gray;
@@ -121,30 +121,72 @@ footer{
 .star.one, .star.two, .star.three, .star.four, .star.five {
   color: gold;
 }
+/*Tablet*/
+@media screen and (min-width:768px) and (max-width: 1023px) {
+    
+    nav{
+        height: 50px;
+    }
+
+    nav.nav-list{
+        text-align: center;
+        padding-top: 25px;
+    }
+
+    nav.nav-list ul li{
+        display: inline; 
+        padding: 10px;
+    }
+    main button{
+    width: 512px;
+    margin: 0 auto;
+    }
+
+    section article{
+        width: 296px;
+    }
+
+    section.grid{
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    article{
+        width: 700px;
+        margin: 0 auto;
+    }
+
+    .article-img{
+    max-width: 45%;
+    height: auto;
+    }
+}
 
 /* Desktop */
 @media screen and (min-width: 1024px) {
     
     nav{
         height: 50px;
-
     }
 
-    nav.nav-list{ /* Centerar navigeringsmenyn */
+    nav.nav-list{
         text-align: center;
         padding-top: 25px;
 
     }
     nav.nav-list ul li{
-        display: inline; /* Visar menyn som inline */
+        display: inline; 
         padding: 10px;
+    }
+
+    main button{
+    width: 512px;
+    margin: 0 auto;
     }
 
     section.grid{
         width: 512px;
         margin: 20px auto;
-        margin-left: auto;
-        margin-right: auto;
         grid-template-columns: 1fr 1fr;
     }
     section article{
@@ -153,8 +195,7 @@ footer{
     
     article{
         width: 812px;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
     }
 
     .article-img{
@@ -163,8 +204,8 @@ footer{
     }
 
     .album-cover{
-    max-width: 400%;
-    max-height: 400%;
+    max-width: 400px;
+    max-height: 400px;
     min-width: 400px;
 	display: block;
 	margin: 0 auto;        
